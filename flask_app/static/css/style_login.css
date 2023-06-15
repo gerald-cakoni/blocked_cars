@@ -1,0 +1,17 @@
+.bg-login{
+ background-color: rgb(148, 242, 211);
+margin: 2% 5%;
+padding: 2%;
+border-radius: 4%;
+}
+
+.body-login{
+  background-color: rgb(191, 241, 225);
+}
+
+.login-img{
+  width: 30%;
+  height: auto;
+  padding: 5%;
+}
+
