@@ -174,8 +174,7 @@ def selectCarFinal(id):
 
         if id not in joinedCar:
             return render_template("selectCar.html", carLogged = carLogged, car_id = id, loggedUser = loggedUser)
-
-        return redirect(request.referrer)
+        return redirect('request.referrer')
     return redirect('/')
 
 @app.route('/join/car/<int:car_id>', methods = ["POST"])
@@ -190,7 +189,7 @@ def selectCar(car_id):
         joinedCar = Car.get_cars_joined(data)
         if id not in joinedCar:
             Car.join(data)
-            return redirect("/")
+            return redirect("/allcars")
         return redirect(request.referrer)
     return redirect('/')
 
