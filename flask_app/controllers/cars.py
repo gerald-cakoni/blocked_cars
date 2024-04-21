@@ -69,7 +69,6 @@ def viewCar(id):
         carsJoinedSpecific = Car.get_cars_blocked(data)
         for car2 in carsJoinedSpecific:
             savedCars.append(car2)
-
         print(savedCars)
         return render_template('showOne.html', loggedUser = loggedUser, car= car, savedcars=savedCars)
     return redirect('/')
